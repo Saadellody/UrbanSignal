@@ -1,0 +1,36 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-26T21:30:00Z"},
+  "title": "UrbanSignal — Maquettes UI/UX",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 2300, "title": "E01 · Accueil", "expand": "fill", "is_interactive": true},
+    "Connexion.dc.html": {"x": 1520, "y": 0, "w": 1440, "h": 960, "title": "E02 · Connexion / Inscription", "expand": "fill", "is_interactive": true},
+    "Carte.dc.html": {"x": 3040, "y": 0, "w": 1440, "h": 980, "title": "E03 · Carte des signalements", "expand": "fill", "is_interactive": true},
+    "Signaler.dc.html": {"x": 4560, "y": 0, "w": 1440, "h": 1180, "title": "E04 · Nouveau signalement", "expand": "fill", "is_interactive": true},
+    "Detail.dc.html": {"x": 0, "y": 2420, "w": 1440, "h": 1500, "title": "E05 · Détail d'un signalement", "expand": "fill", "is_interactive": true},
+    "MesSignalements.dc.html": {"x": 1520, "y": 2420, "w": 1440, "h": 1100, "title": "E06 · Mes signalements", "expand": "fill", "is_interactive": true},
+    "Profil.dc.html": {"x": 3040, "y": 2420, "w": 1440, "h": 1100, "title": "E07 · Profil et préférences", "expand": "fill", "is_interactive": true},
+    "Notifications.dc.html": {"x": 4560, "y": 2420, "w": 1440, "h": 1000, "title": "E08 · Notifications", "expand": "fill", "is_interactive": true},
+    "AdminValidation.dc.html": {"x": 0, "y": 4340, "w": 1440, "h": 1150, "title": "E09 · Back-office : file de validation", "expand": "fill", "is_interactive": true},
+    "AdminSignalements.dc.html": {"x": 1520, "y": 4340, "w": 1440, "h": 1100, "title": "E10 · Back-office : tous les signalements", "expand": "fill", "is_interactive": true},
+    "AdminUtilisateurs.dc.html": {"x": 3040, "y": 4340, "w": 1440, "h": 1050, "title": "E11 · Back-office : utilisateurs", "expand": "fill", "is_interactive": true},
+    "AdminReferentiels.dc.html": {"x": 4560, "y": 4340, "w": 1440, "h": 1150, "title": "E12 · Back-office : catégories, services, quartiers", "expand": "fill", "is_interactive": true},
+    "Statistiques.dc.html": {"x": 0, "y": 5910, "w": 1440, "h": 1400, "title": "E13 · Tableau de bord statistique", "expand": "fill", "is_interactive": true},
+    "ServiceResponsable.dc.html": {"x": 1520, "y": 5910, "w": 1440, "h": 1100, "title": "E14 · Responsable : mon service", "expand": "fill", "is_interactive": true},
+    "AgentInterventions.dc.html": {"x": 3040, "y": 5910, "w": 1440, "h": 1100, "title": "E15 · Agent : mes interventions", "expand": "fill", "is_interactive": true}
+  },
+  "order": [
+    "Main.dc.html", "Connexion.dc.html", "Carte.dc.html", "Signaler.dc.html",
+    "Detail.dc.html", "MesSignalements.dc.html", "Profil.dc.html", "Notifications.dc.html",
+    "AdminValidation.dc.html", "AdminSignalements.dc.html", "AdminUtilisateurs.dc.html", "AdminReferentiels.dc.html",
+    "Statistiques.dc.html", "ServiceResponsable.dc.html", "AgentInterventions.dc.html"
+  ],
+  "notes": {
+    "secCitoyen": {"x": 0, "y": -320, "text": "Espace public & citoyen", "kind": "title1", "maxW": 6000},
+    "secAdmin": {"x": 0, "y": 4020, "text": "Back-office municipal", "kind": "title1", "maxW": 6000},
+    "secServices": {"x": 0, "y": 5590, "text": "Pilotage & services techniques", "kind": "title1", "maxW": 4480}
+  },
+  "designSystems": []
+}

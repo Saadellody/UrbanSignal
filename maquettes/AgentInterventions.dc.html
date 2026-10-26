@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal Agent — Mes interventions</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F8FC}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+textarea:focus{outline:3px solid #BFDBFE;border-color:#2563EB}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F6F8FC; min-height: 100vh">
+
+  <header style="background: #0F172A; color: #FFFFFF">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: #EA580C; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 7l3-3 3 3-3 3M17 10 7 20l-3-3L14 7"/></svg></span>
+        <span style="display: flex; flex-direction: column"><span style="font-weight: 800; font-size: 17px">UrbanSignal Terrain</span><span style="font-size: 12px; color: #94A3B8; font-weight: 600">Service Voirie</span></span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <span style="font-size: 14px; color: #CBD5E1">Lundi 26 octobre</span>
+        <span style="width: 40px; height: 40px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center" aria-label="Karim O., agent" role="img">KO</span>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1280px; margin: 0 auto; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 4px"><h1 style="margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -0.03em">Bonjour Karim, 3 interventions aujourd'hui</h1><span style="font-size: 15px; color: #475569">Itinéraire conseillé : Rue des Lilas → Rue Pasteur → Avenue Foch</span></div>
+      <div role="tablist" aria-label="Période" style="display: flex; padding: 4px; gap: 4px; background: #E2E8F0; border-radius: 12px">
+        <button type="button" role="tab" aria-selected="true" style="height: 40px; padding: 0 14px; border: 0; border-radius: 9px; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; box-shadow: 0 1px 3px rgba(15,23,42,0.15)">Aujourd'hui · 3</button>
+        <button type="button" role="tab" aria-selected="false" style="height: 40px; padding: 0 14px; border: 0; border-radius: 9px; background: transparent; color: #475569; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">À venir · 2</button>
+        <button type="button" role="tab" aria-selected="false" style="height: 40px; padding: 0 14px; border: 0; border-radius: 9px; background: transparent; color: #475569; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Terminées · 14</button>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-start">
+      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <div style="position: relative; height: 240px; border-radius: 20px; overflow: hidden; border: 1px solid #E2E8F0; background: #E9EEF5">
+          <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%" aria-hidden="true"><rect width="800" height="500" fill="#E9EEF5"/><rect x="540" y="40" width="190" height="140" rx="14" fill="#CDEFD9"/><path d="M0 120 C200 100 400 160 800 130" stroke="#FFFFFF" stroke-width="18" fill="none"/><path d="M0 330 L800 300" stroke="#FFFFFF" stroke-width="22" fill="none"/><path d="M260 0 L300 500" stroke="#FFFFFF" stroke-width="16" fill="none"/><path d="M560 0 L520 500" stroke="#FFFFFF" stroke-width="12" fill="none"/><path d="M200 380 C300 300 380 260 470 230 S620 160 660 120" stroke="#2563EB" stroke-width="6" stroke-dasharray="14 10" fill="none" stroke-linecap="round"/></svg>
+          <span role="img" aria-label="Arrêt 1" style="position: absolute; left: 25%; top: 76%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 999px; background: #EA580C; color: #FFFFFF; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; border: 3px solid #FFFFFF">1</span>
+          <span role="img" aria-label="Arrêt 2" style="position: absolute; left: 59%; top: 46%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 999px; background: #2563EB; color: #FFFFFF; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; border: 3px solid #FFFFFF">2</span>
+          <span role="img" aria-label="Arrêt 3" style="position: absolute; left: 82%; top: 24%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 999px; background: #2563EB; color: #FFFFFF; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; border: 3px solid #FFFFFF">3</span>
+        </div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+          <sc-for list="{{jobs}}" as="j" hint-placeholder-count="3">
+            <li>
+              <button type="button" onClick="{{j.pick}}" style="width: 100%; text-align: left; font: inherit; cursor: pointer; display: flex; gap: 12px; align-items: center; padding: 14px; border-radius: 16px; background: #FFFFFF; border: 2px solid {{j.ring}}">
+                <span style="width: 34px; height: 34px; flex: none; border-radius: 999px; background: #0F172A; color: #FFFFFF; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center">{{j.n}}</span>
+                <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px"><span style="font-weight: 700; font-size: 15px; color: #0F172A">{{j.title}}</span><span style="font-size: 13px; color: #475569">{{j.place}} · {{j.slot}}</span></span>
+                <span style="flex: none; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: {{j.bg}}; color: {{j.fg}}">{{j.status}}</span>
+              </button>
+            </li>
+          </sc-for>
+        </ul>
+      </div>
+
+      <section aria-label="Intervention sélectionnée" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 22px; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px">
+          <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: #475569">{{cur.ref}} · priorité {{cur.prio}}</span><h2 style="margin: 0; font-size: 24px; letter-spacing: -0.02em">{{cur.title}}</h2><span style="font-size: 15px; color: #475569">{{cur.place}} · créneau {{cur.slot}}</span></div>
+          <span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; background: {{cur.bg}}; color: {{cur.fg}}">{{cur.status}}</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+          <div style="height: 180px; border-radius: 14px; background: #CBD5E1; position: relative; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #334155">[Photo du citoyen]<span style="position: absolute; left: 10px; top: 10px; padding: 4px 9px; border-radius: 7px; background: rgba(15,23,42,0.75); color: #FFFFFF; font-size: 12px; font-weight: 700">Avant</span></div>
+          <label for="ag-after" style="height: 180px; border-radius: 14px; border: 2px dashed #93C5FD; background: #F5F9FF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: #1E3A8A; cursor: pointer; text-align: center; padding: 10px">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span style="font-weight: 700">Photo « après »</span><span style="font-size: 13px">Obligatoire pour clôturer</span>
+            <input id="ag-after" type="file" accept="image/*" capture="environment" style="position: absolute; width: 1px; height: 1px; opacity: 0">
+          </label>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #334155">{{cur.desc}}</p>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="ag-note" style="font-size: 14px; font-weight: 600">Commentaire d'intervention <span style="font-weight: 500; color: #475569">(visible du citoyen)</span></label>
+          <textarea id="ag-note" rows="3" placeholder="Ex. : Trou rebouché à l'enrobé à froid, zone nettoyée." style="padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 15px; resize: vertical"></textarea>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; border-top: 1px solid #E2E8F0; padding-top: 18px">
+          <a href="https://www.openstreetmap.org" style="height: 52px; padding: 0 18px; border-radius: 12px; border: 1px solid #CBD5E1; color: #0F172A; font-size: 15px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"/></svg>Itinéraire</a>
+          <button type="button" onClick="{{block}}" style="height: 52px; padding: 0 18px; border-radius: 12px; border: 1px solid #FDE68A; background: #FEFCE8; color: #854D0E; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Signaler un blocage</button>
+          <sc-if value="{{canStart}}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{start}}" style="margin-left: auto; height: 52px; padding: 0 22px; border-radius: 12px; border: 0; background: #C2410C; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Démarrer l'intervention</button></sc-if>
+          <sc-if value="{{canResolve}}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{resolve}}" style="margin-left: auto; height: 52px; padding: 0 22px; border-radius: 12px; border: 0; background: #15803D; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Marquer comme résolu</button></sc-if>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { sel: 0, status: { 0: 'En cours', 1: 'Affecté', 2: 'Affecté' } };
+  }
+  renderVals() {
+    var S = {
+      'Affecté': ['#EDE9FE', '#5B21B6'], 'En cours': ['#FFEDD5', '#9A3412'],
+      'En attente': ['#FEF9C3', '#854D0E'], 'Résolu': ['#DCFCE7', '#166534']
+    };
+    var data = [
+      { ref: 'US-2026-000123', title: "Nid-de-poule profond devant l'école", place: '12 rue des Lilas', slot: '08:30–10:00', prio: 'haute', desc: 'Trou d’environ 40 cm avant le passage piéton de l’école. Zone balisée le 26 oct. 18 habitants soutiennent ce signalement.' },
+      { ref: 'US-2026-000126', title: 'Câble électrique pendant', place: 'Rue Pasteur, arrêt de bus', slot: '10:30–11:30', prio: 'urgente', desc: 'Câble pendant d’un poteau à hauteur de tête. Prévoir la nacelle et couper l’accès au trottoir.' },
+      { ref: 'US-2026-000119', title: 'Bordure de trottoir descellée', place: '45 avenue Foch', slot: '14:00–15:30', prio: 'normale', desc: 'Bordure de trottoir sortie de son logement sur 2 mètres, risque de chute.' }
+    ];
+    var st = this.state.status;
+    var sel = this.state.sel;
+    var jobs = data.map((d, i) => ({
+      n: i + 1, title: d.title, place: d.place, slot: d.slot, status: st[i], bg: S[st[i]][0], fg: S[st[i]][1],
+      ring: i === sel ? '#2563EB' : '#E2E8F0',
+      pick: () => this.setState({ sel: i })
+    }));
+    var setStatus = (v) => { var n = Object.assign({}, st); n[sel] = v; this.setState({ status: n }); };
+    var cur = Object.assign({}, data[sel], { status: st[sel], bg: S[st[sel]][0], fg: S[st[sel]][1] });
+    return {
+      jobs: jobs,
+      cur: cur,
+      canStart: st[sel] === 'Affecté' || st[sel] === 'En attente',
+      canResolve: st[sel] === 'En cours',
+      start: () => setStatus('En cours'),
+      block: () => setStatus('En attente'),
+      resolve: () => setStatus('Résolu')
+    };
+  }
+}
+</script>
+</body>
+</html>

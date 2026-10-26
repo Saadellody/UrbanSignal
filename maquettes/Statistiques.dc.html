@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal Admin — Tableau de bord</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F1F5F9}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F1F5F9; min-height: 100vh; display: flex; flex-wrap: wrap">
+
+  <aside style="flex: 1 1 248px; max-width: 100%; box-sizing: border-box; background: #0F172A; color: #E2E8F0; padding: 20px 14px; display: flex; flex-direction: column; gap: 24px">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 0 8px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 34px; height: 34px; border-radius: 10px; background: #2563EB; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <span style="display: flex; flex-direction: column"><span style="font-weight: 800; font-size: 17px">UrbanSignal</span><span style="font-size: 12px; color: #94A3B8; font-weight: 600">Back-office mairie</span></span>
+    </a>
+    <nav aria-label="Back-office" style="display: flex; flex-direction: column; gap: 4px">
+      <a href="AdminValidation.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/></svg>À valider<span style="margin-left: auto; padding: 2px 8px; border-radius: 999px; background: #C2410C; color: #FFFFFF; font-size: 12px; font-weight: 800">8</span></a>
+      <a href="AdminSignalements.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Signalements</a>
+      <a href="Statistiques.dc.html" aria-current="page" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; background: #1E293B; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15v-4M12 15V7M17 15v-7"/></svg>Statistiques</a>
+      <a href="AdminUtilisateurs.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg>Utilisateurs</a>
+      <a href="AdminReferentiels.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Référentiels</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: 12px; background: #1E293B">
+      <span style="width: 36px; height: 36px; border-radius: 999px; background: #334155; color: #FFFFFF; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">NA</span>
+      <span style="display: flex; flex-direction: column; min-width: 0"><span style="font-size: 14px; font-weight: 700; color: #FFFFFF">Nadia A.</span><span style="font-size: 12px; color: #94A3B8">Administratrice</span></span>
+    </div>
+  </aside>
+
+  <div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column">
+    <header style="background: #FFFFFF; border-bottom: 1px solid #E2E8F0; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><h1 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">Tableau de bord</h1><span style="font-size: 14px; color: #475569">Données de démonstration · mise à jour il y a 5 min</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <div role="group" aria-label="Période" style="display: flex; padding: 4px; gap: 4px; background: #F1F5F9; border-radius: 12px">
+          <sc-for list="{{periods}}" as="p" hint-placeholder-count="4">
+            <sc-if value="{{p.active}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" onClick="{{p.pick}}" style="height: 36px; padding: 0 12px; border: 0; border-radius: 9px; background: #FFFFFF; color: #0F172A; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 1px 3px rgba(15,23,42,0.15)">{{p.label}}</button></sc-if>
+            <sc-if value="{{p.inactive}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{p.pick}}" style="height: 36px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: #475569; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer">{{p.label}}</button></sc-if>
+          </sc-for>
+        </div>
+        <button type="button" style="height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid #CBD5E1; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Exporter PDF</button>
+      </div>
+    </header>
+
+    <main style="padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+      <section aria-label="Indicateurs" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px">
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #475569">Signalements reçus</span><span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em">{{k.total}}</span><span style="font-size: 13px; font-weight: 600; color: #166534">+12 % vs période précédente</span></div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #475569">En attente de validation</span><span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em">8</span><span style="font-size: 13px; font-weight: 600; color: #475569">le plus ancien : 19 h</span></div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #475569">En cours de traitement</span><span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em">{{k.progress}}</span><span style="font-size: 13px; font-weight: 600; color: #475569">dont 4 en attente</span></div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #475569">Résolus</span><span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em">{{k.done}}</span><span style="font-size: 13px; font-weight: 600; color: #166534">{{k.rate}} du total</span></div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #475569">Délai moyen de résolution</span><span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em">4,2 j</span><span style="font-size: 13px; font-weight: 600; color: #166534">−0,8 j vs période précédente</span></div>
+      </section>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <section style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><h2 style="margin: 0; font-size: 17px">Évolution mensuelle des signalements</h2><span style="font-size: 13px; color: #475569">12 derniers mois</span></div>
+          <div role="img" aria-label="Diagramme en barres : signalements par mois, de 18 en novembre 2025 à 44 en octobre 2026" style="display: flex; flex-direction: column; gap: 8px">
+            <div style="height: 220px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px; align-items: end; border-bottom: 1px solid #CBD5E1; background: linear-gradient(#F1F5F9 1px, transparent 1px) 0 0 / 100% 55px">
+              <sc-for list="{{months}}" as="m" hint-placeholder-count="12">
+                <span style="display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end"><span style="font-size: 11px; font-weight: 700; color: #334155">{{m.v}}</span><span style="width: 100%; max-width: 28px; border-radius: 6px 6px 0 0; height: {{m.h}}; background: {{m.c}}"></span></span>
+              </sc-for>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px; font-size: 11px; color: #475569; text-align: center">
+              <sc-for list="{{months}}" as="m" hint-placeholder-count="12"><span>{{m.l}}</span></sc-for>
+            </div>
+          </div>
+        </section>
+
+        <section style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 16px">
+          <h2 style="margin: 0; font-size: 17px">Répartition par catégorie</h2>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px">
+            <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Donut : Voirie 28 %, Propreté 24 %, Éclairage 20 %, Eau 10 %, Signalisation 7 %, Espaces verts 6 %, Autres 5 %" style="flex: none">
+              <g transform="rotate(-90 80 80)" fill="none" stroke-width="22">
+                <circle cx="80" cy="80" r="60" stroke="#2563EB" stroke-dasharray="103.6 273.4" stroke-dashoffset="0"/>
+                <circle cx="80" cy="80" r="60" stroke="#EA580C" stroke-dasharray="88.5 288.5" stroke-dashoffset="-105.6"/>
+                <circle cx="80" cy="80" r="60" stroke="#16A34A" stroke-dasharray="73.4 303.6" stroke-dashoffset="-196.1"/>
+                <circle cx="80" cy="80" r="60" stroke="#0891B2" stroke-dasharray="35.7 341.3" stroke-dashoffset="-271.5"/>
+                <circle cx="80" cy="80" r="60" stroke="#DC2626" stroke-dasharray="24.4 352.6" stroke-dashoffset="-309.2"/>
+                <circle cx="80" cy="80" r="60" stroke="#7C3AED" stroke-dasharray="20.6 356.4" stroke-dashoffset="-335.6"/>
+                <circle cx="80" cy="80" r="60" stroke="#94A3B8" stroke-dasharray="16.9 360.1" stroke-dashoffset="-358.2"/>
+              </g>
+              <text x="80" y="78" text-anchor="middle" font-size="24" font-weight="800" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif">{{k.total}}</text>
+              <text x="80" y="98" text-anchor="middle" font-size="11" fill="#475569" font-family="Plus Jakarta Sans, sans-serif">signalements</text>
+            </svg>
+            <ul style="list-style: none; margin: 0; padding: 0; flex: 1 1 140px; display: flex; flex-direction: column; gap: 8px; font-size: 13px">
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #2563EB"></span>Voirie<span style="margin-left: auto; font-weight: 700">28 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #EA580C"></span>Propreté<span style="margin-left: auto; font-weight: 700">24 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #16A34A"></span>Éclairage<span style="margin-left: auto; font-weight: 700">20 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #0891B2"></span>Eau<span style="margin-left: auto; font-weight: 700">10 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #DC2626"></span>Signalisation<span style="margin-left: auto; font-weight: 700">7 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #7C3AED"></span>Espaces verts<span style="margin-left: auto; font-weight: 700">6 %</span></li>
+              <li style="display: flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #94A3B8"></span>Autres<span style="margin-left: auto; font-weight: 700">5 %</span></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <section style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+          <h2 style="margin: 0; font-size: 17px">Signalements par quartier</h2>
+          <sc-for list="{{quartiers}}" as="q" hint-placeholder-count="5">
+            <div style="display: grid; grid-template-columns: 70px minmax(0, 1fr) 36px; align-items: center; gap: 10px; font-size: 14px"><span style="font-weight: 600">{{q.n}}</span><span style="height: 14px; border-radius: 7px; background: #F1F5F9; overflow: hidden"><span style="display: block; height: 100%; border-radius: 7px; background: #2563EB; width: {{q.w}}"></span></span><span style="font-weight: 700; text-align: right">{{q.v}}</span></div>
+          </sc-for>
+        </section>
+        <section style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+          <h2 style="margin: 0; font-size: 17px">Délai moyen par service</h2>
+          <sc-for list="{{delays}}" as="d" hint-placeholder-count="5">
+            <div style="display: grid; grid-template-columns: 110px minmax(0, 1fr) 44px; align-items: center; gap: 10px; font-size: 14px"><span style="font-weight: 600">{{d.n}}</span><span style="height: 14px; border-radius: 7px; background: #F1F5F9; overflow: hidden"><span style="display: block; height: 100%; border-radius: 7px; background: {{d.c}}; width: {{d.w}}"></span></span><span style="font-weight: 700; text-align: right">{{d.v}}</span></div>
+          </sc-for>
+          <span style="font-size: 13px; color: #475569">En orange : au-dessus de l'objectif de 5 jours.</span>
+        </section>
+        <section style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px">
+          <h2 style="margin: 0; font-size: 17px">Satisfaction des citoyens</h2>
+          <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #FEF9C3; color: #854D0E; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">1</span><span style="flex: 1; font-weight: 600">Service Éclairage</span><span style="font-weight: 700">4,8 / 5</span></li>
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #F1F5F9; color: #334155; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">2</span><span style="flex: 1; font-weight: 600">Service Propreté</span><span style="font-weight: 700">4,6 / 5</span></li>
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #F1F5F9; color: #334155; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">3</span><span style="flex: 1; font-weight: 600">Service Espaces verts</span><span style="font-weight: 700">4,5 / 5</span></li>
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #F1F5F9; color: #334155; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">4</span><span style="flex: 1; font-weight: 600">Service Voirie</span><span style="font-weight: 700">4,3 / 5</span></li>
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 26px; height: 26px; border-radius: 8px; background: #F1F5F9; color: #334155; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">5</span><span style="flex: 1; font-weight: 600">Service Eau</span><span style="font-weight: 700">4,1 / 5</span></li>
+          </ol>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { period: '30j' };
+  }
+  renderVals() {
+    var K = {
+      '7j': { total: 41, progress: 17, done: 19 },
+      '30j': { total: 104, progress: 23, done: 68 },
+      '12m': { total: 363, progress: 23, done: 301 },
+      'tout': { total: 1412, progress: 23, done: 1248 }
+    };
+    var p = this.state.period;
+    var k = K[p];
+    var vals = [18, 22, 25, 19, 28, 34, 31, 27, 36, 41, 38, 44];
+    var labels = ['nov.', 'déc.', 'janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.'];
+    var max = 44;
+    var months = vals.map((v, i) => ({ v: v, l: labels[i], h: Math.round((v / max) * 180) + 'px', c: i === 11 ? '#1E40AF' : '#93C5FD' }));
+    var q = [['Centre', 38], ['Nord', 22], ['Est', 19], ['Sud', 14], ['Ouest', 11]];
+    var d = [['Éclairage', 2.6], ['Propreté', 3.1], ['Espaces verts', 4.4], ['Voirie', 5.6], ['Eau', 6.2]];
+    var defs = [['7j', '7 jours'], ['30j', '30 jours'], ['12m', '12 mois'], ['tout', 'Tout']];
+    return {
+      periods: defs.map((x) => ({ label: x[1], active: p === x[0], inactive: p !== x[0], pick: () => this.setState({ period: x[0] }) })),
+      k: { total: k.total, progress: k.progress, done: k.done, rate: Math.round((k.done / k.total) * 100) + ' %' },
+      months: months,
+      quartiers: q.map((x) => ({ n: x[0], v: x[1], w: Math.round((x[1] / 38) * 100) + '%' })),
+      delays: d.map((x) => ({ n: x[0], v: String(x[1]).replace('.', ',') + ' j', w: Math.round((x[1] / 7) * 100) + '%', c: x[1] > 5 ? '#EA580C' : '#2563EB' }))
+    };
+  }
+}
+</script>
+</body>
+</html>

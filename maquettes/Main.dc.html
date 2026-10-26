@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal — Accueil</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F8FC}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F6F8FC; min-height: 100vh">
+
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E2E8F0">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0F172A">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: #2563EB; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span style="font-weight: 800; font-size: 19px; letter-spacing: -0.02em">UrbanSignal</span>
+      </a>
+      <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
+        <a href="Main.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; color: #1D4ED8; background: #EFF6FF">Accueil</a>
+        <a href="Carte.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Carte</a>
+        <a href="#comment" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Comment ça marche</a>
+        <a href="#categories" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Catégories</a>
+      </nav>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+        <a href="Connexion.dc.html" style="padding: 11px 18px; border-radius: 12px; font-size: 15px; font-weight: 600; text-decoration: none; color: #0F172A; border: 1px solid #CBD5E1; background: #FFFFFF">Se connecter</a>
+        <a href="Signaler.dc.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #C2410C"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Signaler un problème</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+      <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 8px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E2E8F0; font-size: 14px; font-weight: 600; color: #334155"><span style="padding: 3px 9px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 12px; font-weight: 700">Nouveau</span>La plateforme citoyenne de votre commune</span>
+        <h1 style="margin: 0; font-size: clamp(38px, 4.6vw, 60px); line-height: 1.05; letter-spacing: -0.035em; font-weight: 800">Votre quartier mérite mieux. <span style="color: #2563EB">Signalez-le</span> en 30 secondes.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #475569; max-width: 540px">Nid-de-poule, lampadaire éteint, dépôt sauvage, fuite d'eau… Prenez une photo, placez le point sur la carte : le bon service municipal est prévenu et vous suivez la réparation en temps réel.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="Signaler.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 24px; border-radius: 14px; font-size: 17px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #C2410C; box-shadow: 0 10px 24px -10px rgba(194,65,12,0.6)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg>Signaler un problème</a>
+          <a href="Carte.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 24px; border-radius: 14px; font-size: 17px; font-weight: 700; text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #CBD5E1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>Explorer la carte</a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: #475569">
+          <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gratuit pour tous les habitants</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Suivi en temps réel</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Signalement anonyme possible</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 460px; min-width: 0; position: relative">
+        <div style="border-radius: 32px; background: #EAF1FF; padding: 12px; position: relative">
+          <svg viewBox="80 40 490 400" style="width: 100%; height: auto; display: block" role="img" aria-label="Illustration isométrique d'une rue avec un nid-de-poule signalé par un repère orange">
+<polygon points="91.4,294.0 320.0,426.0 320.0,414.0 91.4,282.0" fill="#E2E8F0"/>
+<polygon points="548.6,294.0 320.0,426.0 320.0,414.0 548.6,282.0" fill="#CBD5E1"/>
+<polygon points="320.0,150.0 548.6,282.0 320.0,414.0 91.4,282.0" fill="#F8FAFC"/>
+<polygon points="228.6,202.8 457.2,334.8 415.6,358.8 187.0,226.8" fill="#94A3B8"/>
+<polygon points="238.9,196.8 467.6,328.8 457.2,334.8 228.6,202.8" fill="#E2E8F0"/>
+<polygon points="187.0,226.8 415.6,358.8 405.2,364.8 176.6,232.8" fill="#E2E8F0"/>
+<polygon points="219.6,220.0 240.4,232.0 237.5,233.6 216.7,221.6" fill="#F8FAFC"/>
+<polygon points="259.1,242.8 279.9,254.8 277.0,256.4 256.2,244.4" fill="#F8FAFC"/>
+<polygon points="298.6,265.6 319.4,277.6 316.5,279.2 295.7,267.2" fill="#F8FAFC"/>
+<polygon points="338.1,288.4 358.9,300.4 356.0,302.0 335.2,290.0" fill="#F8FAFC"/>
+<polygon points="377.6,311.2 398.4,323.2 395.4,324.8 374.7,312.8" fill="#F8FAFC"/>
+<polygon points="417.1,334.0 437.8,346.0 434.9,347.6 414.2,335.6" fill="#F8FAFC"/>
+<polygon points="349.1,284.4 375.1,295.8 369.9,306.0 346.0,305.4 332.5,291.6" fill="#475569"/>
+<polygon points="351.2,288.0 366.8,295.8 362.6,303.0 346.0,300.6 339.7,292.2" fill="#334155"/>
+<polygon points="263.9,194.4 317.9,225.6 317.9,124.8 263.9,93.6" fill="#93C5FD"/>
+<polygon points="372.0,194.4 317.9,225.6 317.9,124.8 372.0,93.6" fill="#60A5FA"/>
+<polygon points="317.9,62.4 372.0,93.6 317.9,124.8 263.9,93.6" fill="#DBEAFE"/>
+<polygon points="366.8,185.4 357.4,190.8 357.4,176.4 366.8,171.0" fill="#EFF6FF"/>
+<polygon points="348.1,196.2 338.7,201.6 338.7,187.2 348.1,181.8" fill="#EFF6FF"/>
+<polygon points="366.8,159.0 357.4,164.4 357.4,150.0 366.8,144.6" fill="#EFF6FF"/>
+<polygon points="348.1,169.8 338.7,175.2 338.7,160.8 348.1,155.4" fill="#EFF6FF"/>
+<polygon points="366.8,132.6 357.4,138.0 357.4,123.6 366.8,118.2" fill="#EFF6FF"/>
+<polygon points="348.1,143.4 338.7,148.8 338.7,134.4 348.1,129.0" fill="#EFF6FF"/>
+<polygon points="269.1,185.4 278.4,190.8 278.4,176.4 269.1,171.0" fill="#EFF6FF"/>
+<polygon points="287.8,196.2 297.1,201.6 297.1,187.2 287.8,181.8" fill="#EFF6FF"/>
+<polygon points="269.1,159.0 278.4,164.4 278.4,150.0 269.1,144.6" fill="#EFF6FF"/>
+<polygon points="287.8,169.8 297.1,175.2 297.1,160.8 287.8,155.4" fill="#EFF6FF"/>
+<polygon points="269.1,132.6 278.4,138.0 278.4,123.6 269.1,118.2" fill="#EFF6FF"/>
+<polygon points="287.8,143.4 297.1,148.8 297.1,134.4 287.8,129.0" fill="#EFF6FF"/>
+<polygon points="332.5,231.6 374.0,255.6 374.0,193.2 332.5,169.2" fill="#818CF8"/>
+<polygon points="419.8,229.2 374.0,255.6 374.0,193.2 419.8,166.8" fill="#6366F1"/>
+<polygon points="378.2,142.8 419.8,166.8 374.0,193.2 332.5,169.2" fill="#C7D2FE"/>
+<polygon points="414.6,220.2 405.2,225.6 405.2,211.2 414.6,205.8" fill="#EFF6FF"/>
+<polygon points="395.9,231.0 386.5,236.4 386.5,222.0 395.9,216.6" fill="#EFF6FF"/>
+<polygon points="414.6,193.8 405.2,199.2 405.2,184.8 414.6,179.4" fill="#EFF6FF"/>
+<polygon points="395.9,204.6 386.5,210.0 386.5,195.6 395.9,190.2" fill="#EFF6FF"/>
+<polygon points="337.7,222.6 347.0,228.0 347.0,213.6 337.7,208.2" fill="#EFF6FF"/>
+<polygon points="356.4,233.4 365.7,238.8 365.7,224.4 356.4,219.0" fill="#EFF6FF"/>
+<polygon points="337.7,196.2 347.0,201.6 347.0,187.2 337.7,181.8" fill="#EFF6FF"/>
+<polygon points="356.4,207.0 365.7,212.4 365.7,198.0 356.4,192.6" fill="#EFF6FF"/>
+<polygon points="384.4,266.4 446.8,302.4 446.8,168.0 384.4,132.0" fill="#93C5FD"/>
+<polygon points="505.0,268.8 446.8,302.4 446.8,168.0 505.0,134.4" fill="#60A5FA"/>
+<polygon points="442.6,98.4 505.0,134.4 446.8,168.0 384.4,132.0" fill="#DBEAFE"/>
+<polygon points="499.8,259.8 490.4,265.2 490.4,250.8 499.8,245.4" fill="#EFF6FF"/>
+<polygon points="481.1,270.6 471.7,276.0 471.7,261.6 481.1,256.2" fill="#EFF6FF"/>
+<polygon points="462.4,281.4 453.0,286.8 453.0,272.4 462.4,267.0" fill="#EFF6FF"/>
+<polygon points="499.8,233.4 490.4,238.8 490.4,224.4 499.8,219.0" fill="#EFF6FF"/>
+<polygon points="481.1,244.2 471.7,249.6 471.7,235.2 481.1,229.8" fill="#EFF6FF"/>
+<polygon points="462.4,255.0 453.0,260.4 453.0,246.0 462.4,240.6" fill="#EFF6FF"/>
+<polygon points="499.8,207.0 490.4,212.4 490.4,198.0 499.8,192.6" fill="#EFF6FF"/>
+<polygon points="481.1,217.8 471.7,223.2 471.7,208.8 481.1,203.4" fill="#EFF6FF"/>
+<polygon points="462.4,228.6 453.0,234.0 453.0,219.6 462.4,214.2" fill="#EFF6FF"/>
+<polygon points="499.8,180.6 490.4,186.0 490.4,171.6 499.8,166.2" fill="#EFF6FF"/>
+<polygon points="481.1,191.4 471.7,196.8 471.7,182.4 481.1,177.0" fill="#EFF6FF"/>
+<polygon points="462.4,202.2 453.0,207.6 453.0,193.2 462.4,187.8" fill="#EFF6FF"/>
+<polygon points="389.6,257.4 399.0,262.8 399.0,248.4 389.6,243.0" fill="#EFF6FF"/>
+<polygon points="408.3,268.2 417.7,273.6 417.7,259.2 408.3,253.8" fill="#EFF6FF"/>
+<polygon points="427.0,279.0 436.4,284.4 436.4,270.0 427.0,264.6" fill="#EFF6FF"/>
+<polygon points="389.6,231.0 399.0,236.4 399.0,222.0 389.6,216.6" fill="#EFF6FF"/>
+<polygon points="408.3,241.8 417.7,247.2 417.7,232.8 408.3,227.4" fill="#EFF6FF"/>
+<polygon points="427.0,252.6 436.4,258.0 436.4,243.6 427.0,238.2" fill="#EFF6FF"/>
+<polygon points="389.6,204.6 399.0,210.0 399.0,195.6 389.6,190.2" fill="#EFF6FF"/>
+<polygon points="408.3,215.4 417.7,220.8 417.7,206.4 408.3,201.0" fill="#EFF6FF"/>
+<polygon points="427.0,226.2 436.4,231.6 436.4,217.2 427.0,211.8" fill="#EFF6FF"/>
+<polygon points="389.6,178.2 399.0,183.6 399.0,169.2 389.6,163.8" fill="#EFF6FF"/>
+<polygon points="408.3,189.0 417.7,194.4 417.7,180.0 408.3,174.6" fill="#EFF6FF"/>
+<polygon points="427.0,199.8 436.4,205.2 436.4,190.8 427.0,185.4" fill="#EFF6FF"/>
+<polygon points="383.7,306.0 397.7,306.0 390.7,284.0" fill="#F97316"/><polygon points="386.1,298.0 395.3,298.0 393.7,293.0 387.7,293.0" fill="#FFFFFF"/>
+<polygon points="240.0,306.6 245.2,309.6 245.2,288.0 240.0,285.0" fill="#854D0E"/>
+<polygon points="250.4,306.6 245.2,309.6 245.2,288.0 250.4,285.0" fill="#713F12"/>
+<polygon points="245.2,282.0 250.4,285.0 245.2,288.0 240.0,285.0" fill="#A16207"/>
+<circle cx="245.2" cy="268.1" r="18.0" fill="#4ADE80"/><circle cx="240.4" cy="263.3" r="8.4" fill="#86EFAC"/>
+<polygon points="130.9,278.4 180.7,307.2 180.7,254.4 130.9,225.6" fill="#CBD5E1"/>
+<polygon points="230.6,278.4 180.7,307.2 180.7,254.4 230.6,225.6" fill="#94A3B8"/>
+<polygon points="180.7,196.8 230.6,225.6 180.7,254.4 130.9,225.6" fill="#F1F5F9"/>
+<polygon points="225.4,269.4 216.1,274.8 216.1,260.4 225.4,255.0" fill="#FFFFFF"/>
+<polygon points="206.7,280.2 197.4,285.6 197.4,271.2 206.7,265.8" fill="#FFFFFF"/>
+<polygon points="136.1,269.4 145.4,274.8 145.4,260.4 136.1,255.0" fill="#FFFFFF"/>
+<polygon points="154.8,280.2 164.1,285.6 164.1,271.2 154.8,265.8" fill="#FFFFFF"/>
+<polygon points="244.1,333.0 249.3,336.0 249.3,314.4 244.1,311.4" fill="#854D0E"/>
+<polygon points="254.5,333.0 249.3,336.0 249.3,314.4 254.5,311.4" fill="#713F12"/>
+<polygon points="249.3,308.4 254.5,311.4 249.3,314.4 244.1,311.4" fill="#A16207"/>
+<circle cx="249.3" cy="294.5" r="18.0" fill="#4ADE80"/><circle cx="244.5" cy="289.7" r="8.4" fill="#86EFAC"/>
+<polygon points="341.2,339.4 344.9,341.5 344.9,269.5 341.2,267.4" fill="#475569"/>
+<polygon points="348.7,339.4 344.9,341.5 344.9,269.5 348.7,267.4" fill="#334155"/>
+<polygon points="344.9,265.2 348.7,267.4 344.9,269.5 341.2,267.4" fill="#64748B"/>
+<rect x="330.9" y="260.2" width="28" height="9" rx="4" fill="#334155"/><rect x="334.9" y="268.2" width="20" height="3" rx="1.5" fill="#CBD5E1"/>
+<polygon points="323.1,359.4 352.2,376.2 352.2,372.6 323.1,355.8" fill="#FB923C"/>
+<polygon points="361.6,370.8 352.2,376.2 352.2,372.6 361.6,367.2" fill="#EA580C"/>
+<polygon points="332.5,350.4 361.6,367.2 352.2,372.6 323.1,355.8" fill="#FDBA74"/>
+<ellipse cx="354.3" cy="297.0" rx="13.2" ry="6.7" fill="#0F172A" opacity="0.18"/>
+<path d="M354.3,215.4 C348.0,199.2 336.3,192.0 336.3,181.2 A18.0,18.0 0 1 1 372.3,181.2 C372.3,192.0 360.6,199.2 354.3,215.4Z" fill="#EA580C"/><circle cx="354.3" cy="181.2" r="7.6" fill="#FFFFFF"/>
+          </svg>
+          <div style="position: absolute; left: 20px; bottom: 28px; background: #FFFFFF; border-radius: 16px; padding: 12px 16px; box-shadow: 0 18px 40px -16px rgba(15,23,42,0.35); display: flex; align-items: center; gap: 12px">
+            <span style="width: 40px; height: 40px; border-radius: 12px; background: #FFEDD5; color: #C2410C; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v3M12 18v3"/></svg></span>
+            <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700">Nid-de-poule · Rue des Lilas</span><span style="font-size: 13px; color: #475569">Signalé il y a 2 min · Service Voirie prévenu</span></span>
+          </div>
+          <div style="position: absolute; right: 20px; top: 24px; background: #FFFFFF; border-radius: 14px; padding: 10px 14px; box-shadow: 0 18px 40px -16px rgba(15,23,42,0.35); display: flex; align-items: center; gap: 10px">
+            <span style="width: 32px; height: 32px; border-radius: 999px; background: #DCFCE7; color: #166534; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span style="font-size: 14px; font-weight: 700">Lampadaire réparé</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Chiffres clés" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 72px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.03em">[1 248]</span>
+          <span style="font-size: 15px; color: #475569">problèmes résolus cette année</span>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.03em">[4,2 jours]</span>
+          <span style="font-size: 15px; color: #475569">délai moyen de résolution</span>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.03em">[12]</span>
+          <span style="font-size: 15px; color: #475569">quartiers couverts</span>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 36px; font-weight: 800; letter-spacing: -0.03em">[4,6 / 5]</span>
+          <span style="font-size: 15px; color: #475569">satisfaction des habitants</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="comment" style="background: #FFFFFF; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px">
+        <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+          <span style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1D4ED8">Comment ça marche</span>
+          <h2 style="margin: 0; font-size: clamp(30px, 3.2vw, 42px); letter-spacing: -0.03em; line-height: 1.1">Trois étapes, du signalement à la réparation</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+          <div style="border-radius: 24px; background: #F6F8FC; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+            <span style="width: 52px; height: 52px; border-radius: 16px; background: #2563EB; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg></span>
+            <span style="font-size: 14px; font-weight: 700; color: #475569">Étape 1</span>
+            <h3 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">Signalez</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #475569">Choisissez une catégorie, ajoutez une photo et placez le point sur la carte. Les signalements proches vous sont proposés pour éviter les doublons.</p>
+          </div>
+          <div style="border-radius: 24px; background: #F6F8FC; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+            <span style="width: 52px; height: 52px; border-radius: 16px; background: #7C3AED; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+            <span style="font-size: 14px; font-weight: 700; color: #475569">Étape 2</span>
+            <h3 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">Suivez</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #475569">La mairie valide votre signalement et le transmet au service compétent. Vous êtes notifié à chaque changement de statut.</p>
+          </div>
+          <div style="border-radius: 24px; background: #F6F8FC; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+            <span style="width: 52px; height: 52px; border-radius: 16px; background: #15803D; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span style="font-size: 14px; font-weight: 700; color: #475569">Étape 3</span>
+            <h3 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">C'est réparé</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #475569">L'agent ajoute une photo après intervention. Vous confirmez la résolution et notez le service, ou vous rouvrez le dossier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+        <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+          <span style="font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #1D4ED8">Que pouvez-vous signaler ?</span>
+          <h2 style="margin: 0; font-size: clamp(30px, 3.2vw, 42px); letter-spacing: -0.03em; line-height: 1.1">Huit catégories, un service responsable pour chacune</h2>
+        </div>
+        <a href="Signaler.dc.html" style="display: inline-flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; text-decoration: none">Commencer un signalement<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #FFEDD5; color: #C2410C; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v3M12 18v3"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Voirie</span><span style="font-size: 14px; color: #475569">Nid-de-poule, trottoir cassé</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #FEF9C3; color: #854D0E; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 2z"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Éclairage public</span><span style="font-size: 14px; color: #475569">Lampadaire en panne</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #DCFCE7; color: #166534; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Propreté</span><span style="font-size: 14px; color: #475569">Déchets, dépôt sauvage</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #DBEAFE; color: #1D4ED8; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Eau et assainissement</span><span style="font-size: 14px; color: #475569">Fuite, égout bouché</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #FEE2E2; color: #B91C1C; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 20h20z"/><path d="M12 9v5M12 17h.01"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Signalisation</span><span style="font-size: 14px; color: #475569">Feu en panne, panneau tombé</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #D1FAE5; color: #047857; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-6M12 2 5 12h4l-3 4h12l-3-4h4z"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Espaces verts</span><span style="font-size: 14px; color: #475569">Arbre tombé, parc négligé</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #EDE9FE; color: #6D28D9; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18M5 10V7h14v3M4 14h16M6 14v5M18 14v5"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Mobilier urbain</span><span style="font-size: 14px; color: #475569">Banc, abribus endommagé</span></span></a>
+        <a href="Signaler.dc.html" style="text-decoration: none; color: #0F172A; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 20px; display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; flex: none; border-radius: 14px; background: #F1F5F9; color: #334155; display: inline-flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 16px">Sécurité / Autre</span><span style="font-size: 14px; color: #475569">Câble dénudé, autre danger</span></span></a>
+      </div>
+    </section>
+
+    <section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 80px">
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 28px; overflow: hidden; display: flex; flex-wrap: wrap">
+        <div style="flex: 999 1 520px; min-width: 0; min-height: 380px; position: relative; background: #E9EEF5">
+          <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%" aria-hidden="true"><rect width="800" height="500" fill="#E9EEF5"/><rect x="540" y="40" width="190" height="140" rx="14" fill="#CDEFD9"/><rect x="330" y="360" width="150" height="70" rx="12" fill="#D6E6FB"/><path d="M0 120 C200 100 400 160 800 130" stroke="#FFFFFF" stroke-width="18" fill="none"/><path d="M0 330 L800 300" stroke="#FFFFFF" stroke-width="22" fill="none"/><path d="M0 330 L800 300" stroke="#FDE68A" stroke-width="2" stroke-dasharray="10 10" fill="none"/><path d="M260 0 L300 500" stroke="#FFFFFF" stroke-width="16" fill="none"/><path d="M560 0 L520 500" stroke="#FFFFFF" stroke-width="12" fill="none"/><path d="M0 450 C250 420 500 470 800 430" stroke="#FFFFFF" stroke-width="10" fill="none"/><path d="M120 0 L80 500" stroke="#FFFFFF" stroke-width="8" fill="none"/><path d="M700 0 L760 500" stroke="#FFFFFF" stroke-width="8" fill="none"/><path d="M-10 230 C150 250 330 210 820 220" stroke="#FFFFFF" stroke-width="8" fill="none"/></svg>
+          <a href="Detail.dc.html" aria-label="Nid-de-poule, en cours" style="position: absolute; left: 36%; top: 58%; transform: translate(-50%, -100%)"><svg width="30" height="38" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 35s12-11 12-21A12 12 0 0 0 2 14c0 10 12 21 12 21z" fill="#EA580C" stroke="#FFFFFF" stroke-width="2"/><circle cx="14" cy="14" r="4.5" fill="#FFFFFF"/></svg></a>
+          <a href="Detail.dc.html" aria-label="Lampadaire, validé" style="position: absolute; left: 62%; top: 30%; transform: translate(-50%, -100%)"><svg width="30" height="38" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 35s12-11 12-21A12 12 0 0 0 2 14c0 10 12 21 12 21z" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/><circle cx="14" cy="14" r="4.5" fill="#FFFFFF"/></svg></a>
+          <a href="Detail.dc.html" aria-label="Dépôt sauvage, résolu" style="position: absolute; left: 20%; top: 36%; transform: translate(-50%, -100%)"><svg width="30" height="38" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 35s12-11 12-21A12 12 0 0 0 2 14c0 10 12 21 12 21z" fill="#16A34A" stroke="#FFFFFF" stroke-width="2"/><circle cx="14" cy="14" r="4.5" fill="#FFFFFF"/></svg></a>
+          <a href="Detail.dc.html" aria-label="Fuite d'eau, nouveau" style="position: absolute; left: 80%; top: 70%; transform: translate(-50%, -100%)"><svg width="30" height="38" viewBox="0 0 28 36" aria-hidden="true"><path d="M14 35s12-11 12-21A12 12 0 0 0 2 14c0 10 12 21 12 21z" fill="#64748B" stroke="#FFFFFF" stroke-width="2"/><circle cx="14" cy="14" r="4.5" fill="#FFFFFF"/></svg></a>
+          <a href="Carte.dc.html" style="position: absolute; left: 20px; bottom: 20px; display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 12px; background: #FFFFFF; color: #0F172A; text-decoration: none; font-weight: 700; font-size: 15px; box-shadow: 0 10px 24px -12px rgba(15,23,42,0.4)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>Ouvrir la carte complète</a>
+        </div>
+        <div style="flex: 1 1 340px; min-width: 0; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+          <h2 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">Derniers signalements près de chez vous</h2>
+          <a href="Detail.dc.html" style="text-decoration: none; color: #0F172A; border: 1px solid #E2E8F0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; justify-content: space-between; gap: 8px; align-items: center"><span style="font-weight: 700; font-size: 15px">Nid-de-poule profond</span><span style="padding: 4px 10px; border-radius: 999px; background: #FFEDD5; color: #9A3412; font-size: 12px; font-weight: 700">En cours</span></span>
+            <span style="font-size: 14px; color: #475569">Rue des Lilas · Quartier Centre · il y a 2 h</span>
+          </a>
+          <a href="Detail.dc.html" style="text-decoration: none; color: #0F172A; border: 1px solid #E2E8F0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; justify-content: space-between; gap: 8px; align-items: center"><span style="font-weight: 700; font-size: 15px">Lampadaire éteint</span><span style="padding: 4px 10px; border-radius: 999px; background: #DBEAFE; color: #1E40AF; font-size: 12px; font-weight: 700">Validé</span></span>
+            <span style="font-size: 14px; color: #475569">Avenue de la Gare · Quartier Nord · hier</span>
+          </a>
+          <a href="Detail.dc.html" style="text-decoration: none; color: #0F172A; border: 1px solid #E2E8F0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+            <span style="display: flex; justify-content: space-between; gap: 8px; align-items: center"><span style="font-weight: 700; font-size: 15px">Dépôt sauvage</span><span style="padding: 4px 10px; border-radius: 999px; background: #DCFCE7; color: #166534; font-size: 12px; font-weight: 700">Résolu</span></span>
+            <span style="font-size: 14px; color: #475569">Parc Jean-Moulin · Quartier Est · il y a 3 j</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 80px">
+      <div style="border-radius: 28px; background: #1E3A8A; color: #FFFFFF; padding: 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 10px; max-width: 620px">
+          <h2 style="margin: 0; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.03em; line-height: 1.15">Vous avez vu un problème aujourd'hui ?</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #DBEAFE">Créez votre compte en une minute et devenez acteur de votre quartier.</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="Connexion.dc.html" style="padding: 15px 22px; border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none; color: #1E3A8A; background: #FFFFFF">Créer un compte</a>
+          <a href="Signaler.dc.html" style="padding: 15px 22px; border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none; color: #FFFFFF; border: 1px solid #93C5FD">Signaler maintenant</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background: #FFFFFF; border-top: 1px solid #E2E8F0">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #475569">
+      <span style="font-weight: 700; color: #0F172A">UrbanSignal · [Nom de la commune]</span>
+      <span style="display: flex; flex-wrap: wrap; gap: 20px"><a href="#comment">Aide</a><a href="#categories">Catégories</a><a href="Connexion.dc.html">Espace agents</a><a href="#">Confidentialité</a></span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

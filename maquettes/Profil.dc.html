@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal — Profil et préférences</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F8FC}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+input:focus,select:focus{outline:3px solid #BFDBFE;border-color:#2563EB}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F6F8FC; min-height: 100vh">
+
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E2E8F0">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0F172A">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: #2563EB; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span style="font-weight: 800; font-size: 19px; letter-spacing: -0.02em">UrbanSignal</span>
+      </a>
+      <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
+        <a href="Main.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Accueil</a>
+        <a href="Carte.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Carte</a>
+        <a href="MesSignalements.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Mes signalements</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <a href="Notifications.dc.html" aria-label="Notifications, 3 non lues" style="position: relative; width: 44px; height: 44px; border-radius: 12px; border: 1px solid #E2E8F0; display: inline-flex; align-items: center; justify-content: center; color: #334155"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span style="position: absolute; top: -4px; right: -4px; min-width: 20px; height: 20px; padding: 0 5px; box-sizing: border-box; border-radius: 999px; background: #C2410C; color: #FFFFFF; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center">3</span></a>
+        <a href="Signaler.dc.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #C2410C"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Signaler</a>
+        <a href="Profil.dc.html" aria-label="Mon profil" aria-current="page" style="width: 44px; height: 44px; border-radius: 999px; background: #2563EB; color: #FFFFFF; font-weight: 800; font-size: 15px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center">YB</a>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+    <nav aria-label="Paramètres" style="flex: 1 1 240px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 10px; display: flex; flex-direction: column; gap: 4px">
+      <a href="#infos" aria-current="true" style="padding: 12px 14px; border-radius: 12px; background: #EFF6FF; color: #1D4ED8; font-weight: 700; font-size: 15px; text-decoration: none">Informations personnelles</a>
+      <a href="#securite" style="padding: 12px 14px; border-radius: 12px; color: #334155; font-weight: 600; font-size: 15px; text-decoration: none">Sécurité</a>
+      <a href="#notifs" style="padding: 12px 14px; border-radius: 12px; color: #334155; font-weight: 600; font-size: 15px; text-decoration: none">Notifications</a>
+      <a href="#compte" style="padding: 12px 14px; border-radius: 12px; color: #334155; font-weight: 600; font-size: 15px; text-decoration: none">Confidentialité et compte</a>
+      <a href="Main.dc.html" style="padding: 12px 14px; border-radius: 12px; color: #B91C1C; font-weight: 600; font-size: 15px; text-decoration: none">Se déconnecter</a>
+    </nav>
+
+    <div style="flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+      <section id="infos" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px">
+          <span style="width: 80px; height: 80px; border-radius: 999px; background: #DBEAFE; color: #1E40AF; font-weight: 800; font-size: 28px; display: inline-flex; align-items: center; justify-content: center">YB</span>
+          <span style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 4px"><h1 style="margin: 0; font-size: 26px; letter-spacing: -0.02em">Yasmine Benali</h1><span style="font-size: 15px; color: #475569">Citoyenne · Quartier Centre · membre depuis mars 2026</span></span>
+          <button type="button" style="height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid #CBD5E1; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Changer la photo</button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-prenom" style="font-size: 14px; font-weight: 600">Prénom</label><input id="p-prenom" type="text" value="Yasmine" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-nom" style="font-size: 14px; font-weight: 600">Nom</label><input id="p-nom" type="text" value="Benali" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-email" style="font-size: 14px; font-weight: 600">Adresse e-mail</label><input id="p-email" type="email" value="yasmine.benali@exemple.fr" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #166534"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Adresse vérifiée</span></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-tel" style="font-size: 14px; font-weight: 600">Téléphone</label><input id="p-tel" type="tel" value="06 12 34 56 78" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-quartier" style="font-size: 14px; font-weight: 600">Quartier</label><select id="p-quartier" style="height: 48px; padding: 0 12px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px; background: #FFFFFF"><option>Centre</option><option>Nord</option><option>Est</option></select></div>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 10px"><button type="button" style="height: 46px; padding: 0 18px; border-radius: 12px; border: 1px solid #CBD5E1; background: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Annuler</button><button type="button" style="height: 46px; padding: 0 20px; border-radius: 12px; border: 0; background: #2563EB; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Enregistrer</button></div>
+      </section>
+
+      <section id="securite" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+        <h2 style="margin: 0; font-size: 20px">Sécurité</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-old" style="font-size: 14px; font-weight: 600">Mot de passe actuel</label><input id="p-old" type="password" value="motdepasse" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-new" style="font-size: 14px; font-weight: 600">Nouveau mot de passe</label><input id="p-new" type="password" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="p-conf" style="font-size: 14px; font-weight: 600">Confirmer</label><input id="p-conf" type="password" style="height: 48px; padding: 0 14px; border: 1px solid #CBD5E1; border-radius: 12px; font: inherit; font-size: 16px"></div>
+        </div>
+        <button type="button" style="align-self: flex-start; height: 46px; padding: 0 18px; border-radius: 12px; border: 1px solid #CBD5E1; background: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Mettre à jour le mot de passe</button>
+      </section>
+
+      <section id="notifs" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 6px">
+        <h2 style="margin: 0 0 10px; font-size: 20px">Notifications</h2>
+        <sc-for list="{{prefs}}" as="p" hint-placeholder-count="4">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid #F1F5F9">
+            <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 700; font-size: 15px">{{p.label}}</span><span style="font-size: 14px; color: #475569">{{p.hint}}</span></span>
+            <sc-if value="{{p.on}}" hint-placeholder-val="{{ true }}">
+              <button type="button" role="switch" aria-checked="true" aria-label="{{p.label}}" onClick="{{p.toggle}}" style="flex: none; width: 52px; height: 30px; border-radius: 999px; border: 0; background: #2563EB; padding: 3px; display: flex; justify-content: flex-end; cursor: pointer"><span style="width: 24px; height: 24px; border-radius: 999px; background: #FFFFFF"></span></button>
+            </sc-if>
+            <sc-if value="{{p.off}}" hint-placeholder-val="{{ false }}">
+              <button type="button" role="switch" aria-checked="false" aria-label="{{p.label}}" onClick="{{p.toggle}}" style="flex: none; width: 52px; height: 30px; border-radius: 999px; border: 0; background: #CBD5E1; padding: 3px; display: flex; justify-content: flex-start; cursor: pointer"><span style="width: 24px; height: 24px; border-radius: 999px; background: #FFFFFF"></span></button>
+            </sc-if>
+          </div>
+        </sc-for>
+      </section>
+
+      <section id="compte" style="background: #FFFFFF; border: 1px solid #FECACA; border-radius: 24px; padding: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+        <span style="display: flex; flex-direction: column; gap: 4px; max-width: 560px"><h2 style="margin: 0; font-size: 20px">Supprimer mon compte</h2><span style="font-size: 14px; line-height: 1.6; color: #475569">Vos données personnelles seront effacées. Vos signalements restent visibles de façon anonyme pour ne pas interrompre leur traitement.</span></span>
+        <button type="button" style="height: 46px; padding: 0 18px; border-radius: 12px; border: 1px solid #FCA5A5; background: #FFFFFF; color: #B91C1C; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Supprimer le compte</button>
+      </section>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { status: true, email: true, supports: true, news: false };
+  }
+  renderVals() {
+    var defs = [
+      ['status', 'Changement de statut', 'Validé, en cours, résolu : dans l’application'],
+      ['email', 'E-mails de suivi', 'Un e-mail à chaque étape importante'],
+      ['supports', 'Signalements que je soutiens', 'Être prévenu quand ils sont résolus'],
+      ['news', 'Actualités du quartier', 'Travaux prévus et informations de la mairie']
+    ];
+    var prefs = defs.map((d) => ({
+      label: d[1],
+      hint: d[2],
+      on: !!this.state[d[0]],
+      off: !this.state[d[0]],
+      toggle: () => { var u = {}; u[d[0]] = !this.state[d[0]]; this.setState(u); }
+    }));
+    return { prefs: prefs };
+  }
+}
+</script>
+</body>
+</html>

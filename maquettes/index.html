@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UrbanSignal — Maquettes UI/UX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #F1F5F9; color: #0F172A; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  header { background: #0F172A; color: #FFFFFF; padding: 40px 24px; }
+  header div, main { max-width: 1280px; margin: 0 auto; }
+  h1 { margin: 0 0 8px; font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.03em; }
+  header p { margin: 0; color: #CBD5E1; line-height: 1.6; max-width: 720px; }
+  main { padding: 32px 24px 64px; }
+  h2 { font-size: 20px; margin: 32px 0 16px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .card { display: block; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow .15s, transform .15s; }
+  .card:hover, .card:focus-visible { box-shadow: 0 12px 30px rgba(15, 23, 42, .12); transform: translateY(-2px); }
+  .thumb { position: relative; height: 200px; overflow: hidden; background: #F6F8FC; border-bottom: 1px solid #E2E8F0; }
+  .thumb iframe { position: absolute; top: 0; left: 0; width: 1440px; height: 1000px; border: 0; transform-origin: 0 0; pointer-events: none; }
+  .meta { padding: 14px 16px; display: flex; align-items: center; gap: 10px; }
+  .code { font-size: 12px; font-weight: 800; color: #1D4ED8; background: #DBEAFE; border-radius: 8px; padding: 4px 8px; }
+  .name { font-weight: 700; font-size: 15px; }
+</style>
+</head>
+<body>
+<header><div>
+  <h1>UrbanSignal — Maquettes UI/UX</h1>
+  <p>Les 15 écrans de l'application. Cliquez sur un écran pour l'ouvrir ; les liens, onglets et boutons sont cliquables comme dans un prototype.</p>
+</div></header>
+<main id="app"></main>
+<script>
+  var groups = [
+    ['Espace public & citoyen', [
+      ['E01', 'Accueil', 'Main'],
+      ['E02', 'Connexion / Inscription', 'Connexion'],
+      ['E03', 'Carte des signalements', 'Carte'],
+      ['E04', 'Nouveau signalement', 'Signaler'],
+      ['E05', "Détail d'un signalement", 'Detail'],
+      ['E06', 'Mes signalements', 'MesSignalements'],
+      ['E07', 'Profil et préférences', 'Profil'],
+      ['E08', 'Notifications', 'Notifications']
+    ]],
+    ['Back-office municipal', [
+      ['E09', 'File de validation', 'AdminValidation'],
+      ['E10', 'Gestion des signalements', 'AdminSignalements'],
+      ['E11', 'Utilisateurs', 'AdminUtilisateurs'],
+      ['E12', 'Référentiels', 'AdminReferentiels']
+    ]],
+    ['Pilotage & services techniques', [
+      ['E13', 'Statistiques', 'Statistiques'],
+      ['E14', 'Responsable de service', 'ServiceResponsable'],
+      ['E15', 'Interventions agent', 'AgentInterventions']
+    ]]
+  ];
+  var app = document.getElementById('app');
+  groups.forEach(function (g) {
+    var h = document.createElement('h2'); h.textContent = g[0]; app.appendChild(h);
+    var grid = document.createElement('div'); grid.className = 'grid'; app.appendChild(grid);
+    g[1].forEach(function (s) {
+      var a = document.createElement('a');
+      a.className = 'card'; a.href = s[2] + '.dc.html';
+      a.innerHTML = '<div class="thumb"><iframe loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>' +
+        '<div class="meta"><span class="code"></span><span class="name"></span></div>';
+      a.querySelector('iframe').src = s[2] + '.dc.html';
+      a.querySelector('.code').textContent = s[0];
+      a.querySelector('.name').textContent = s[1];
+      grid.appendChild(a);
+    });
+  });
+  function scale() {
+    document.querySelectorAll('.thumb').forEach(function (t) {
+      t.querySelector('iframe').style.transform = 'scale(' + t.clientWidth / 1440 + ')';
+    });
+  }
+  window.addEventListener('resize', scale);
+  scale();
+</script>
+</body>
+</html>

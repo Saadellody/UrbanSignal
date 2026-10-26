@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal — Mes signalements</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F8FC}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F6F8FC; min-height: 100vh">
+
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E2E8F0">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0F172A">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: #2563EB; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span style="font-weight: 800; font-size: 19px; letter-spacing: -0.02em">UrbanSignal</span>
+      </a>
+      <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
+        <a href="Main.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Accueil</a>
+        <a href="Carte.dc.html" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; color: #475569">Carte</a>
+        <a href="MesSignalements.dc.html" aria-current="page" style="padding: 10px 14px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; color: #1D4ED8; background: #EFF6FF">Mes signalements</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <a href="Notifications.dc.html" aria-label="Notifications, 3 non lues" style="position: relative; width: 44px; height: 44px; border-radius: 12px; border: 1px solid #E2E8F0; display: inline-flex; align-items: center; justify-content: center; color: #334155"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span style="position: absolute; top: -4px; right: -4px; min-width: 20px; height: 20px; padding: 0 5px; box-sizing: border-box; border-radius: 999px; background: #C2410C; color: #FFFFFF; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center">3</span></a>
+        <a href="Signaler.dc.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #C2410C"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Signaler</a>
+        <a href="Profil.dc.html" aria-label="Mon profil" style="width: 44px; height: 44px; border-radius: 999px; background: #DBEAFE; color: #1E40AF; font-weight: 800; font-size: 15px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center">YB</a>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+    <section style="border-radius: 28px; background: #1E3A8A; color: #FFFFFF; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 8px; max-width: 520px">
+        <h1 style="margin: 0; font-size: clamp(26px, 3vw, 34px); letter-spacing: -0.03em">Bonjour Yasmine</h1>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #DBEAFE">Vos 7 signalements ont déjà permis 2 réparations dans le quartier Centre. Merci !</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; flex: 1 1 460px; max-width: 560px">
+        <div style="border-radius: 18px; background: rgba(255,255,255,0.1); padding: 14px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 800">7</span><span style="font-size: 13px; color: #DBEAFE">Envoyés</span></div>
+        <div style="border-radius: 18px; background: rgba(255,255,255,0.1); padding: 14px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 800">3</span><span style="font-size: 13px; color: #DBEAFE">En attente</span></div>
+        <div style="border-radius: 18px; background: rgba(255,255,255,0.1); padding: 14px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 800">1</span><span style="font-size: 13px; color: #DBEAFE">En cours</span></div>
+        <div style="border-radius: 18px; background: rgba(255,255,255,0.1); padding: 14px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 800">2</span><span style="font-size: 13px; color: #DBEAFE">Résolus</span></div>
+      </div>
+    </section>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+      <div role="tablist" aria-label="Filtrer par statut" style="display: flex; flex-wrap: wrap; gap: 8px">
+        <sc-for list="{{tabs}}" as="t" hint-placeholder-count="5">
+          <sc-if value="{{t.active}}" hint-placeholder-val="{{ false }}">
+            <button type="button" role="tab" aria-selected="true" onClick="{{t.pick}}" style="height: 42px; padding: 0 16px; border-radius: 999px; border: 0; background: #0F172A; color: #FFFFFF; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">{{t.label}} · {{t.count}}</button>
+          </sc-if>
+          <sc-if value="{{t.inactive}}" hint-placeholder-val="{{ true }}">
+            <button type="button" role="tab" aria-selected="false" onClick="{{t.pick}}" style="height: 42px; padding: 0 16px; border-radius: 999px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #334155; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">{{t.label}} · {{t.count}}</button>
+          </sc-if>
+        </sc-for>
+      </div>
+      <div style="display: flex; gap: 8px">
+        <label for="ms-tri" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Trier</label>
+        <select id="ms-tri" style="height: 42px; border: 1px solid #CBD5E1; border-radius: 12px; padding: 0 12px; font: inherit; font-size: 14px; background: #FFFFFF"><option>Plus récents</option><option>Plus soutenus</option></select>
+        <a href="Carte.dc.html" style="height: 42px; padding: 0 14px; border-radius: 12px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #334155; font-size: 14px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>Vue carte</a>
+      </div>
+    </div>
+
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+      <sc-for list="{{items}}" as="it" hint-placeholder-count="5">
+        <li style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+          <span style="width: 96px; height: 76px; flex: none; border-radius: 14px; background: #CBD5E1; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #334155">[Photo]</span>
+          <span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; color: #475569; font-weight: 600">{{it.ref}} · {{it.cat}}</span>
+            <a href="Detail.dc.html" style="font-size: 17px; font-weight: 700; color: #0F172A; text-decoration: none">{{it.title}}</a>
+            <span style="font-size: 14px; color: #475569">{{it.place}} · {{it.date}} · {{it.supports}} soutiens</span>
+          </span>
+          <span style="flex: 0 1 200px; display: flex; flex-direction: column; gap: 8px">
+            <span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; background: {{it.bg}}; color: {{it.fg}}">{{it.status}}</span>
+            <span style="height: 6px; border-radius: 3px; background: #E2E8F0; overflow: hidden" aria-hidden="true"><span style="display: block; height: 100%; border-radius: 3px; width: {{it.progress}}; background: {{it.bar}}"></span></span>
+          </span>
+          <span style="display: flex; gap: 8px; flex: none">
+            <sc-if value="{{it.canEdit}}" hint-placeholder-val="{{ false }}"><a href="Signaler.dc.html" style="height: 42px; padding: 0 14px; border-radius: 10px; border: 1px solid #CBD5E1; color: #0F172A; font-size: 14px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center">Modifier</a></sc-if>
+            <sc-if value="{{it.canRate}}" hint-placeholder-val="{{ false }}"><a href="Detail.dc.html" style="height: 42px; padding: 0 14px; border-radius: 10px; background: #15803D; color: #FFFFFF; font-size: 14px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center">Évaluer</a></sc-if>
+            <a href="Detail.dc.html" aria-label="Ouvrir le signalement" style="width: 42px; height: 42px; border-radius: 10px; border: 1px solid #E2E8F0; color: #334155; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </span>
+        </li>
+      </sc-for>
+    </ul>
+    <sc-if value="{{isEmpty}}" hint-placeholder-val="{{ false }}">
+      <div style="background: #FFFFFF; border: 1px dashed #CBD5E1; border-radius: 20px; padding: 40px; text-align: center; display: flex; flex-direction: column; gap: 8px; align-items: center"><span style="font-weight: 700; font-size: 17px">Aucun signalement dans cette catégorie</span><span style="font-size: 15px; color: #475569">Essayez un autre filtre ou signalez un nouveau problème.</span></div>
+    </sc-if>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { tab: 'all' };
+  }
+  renderVals() {
+    var S = {
+      'Nouveau': { bg: '#F1F5F9', fg: '#334155', bar: '#64748B', group: 'wait' },
+      'Validé': { bg: '#DBEAFE', fg: '#1E40AF', bar: '#2563EB', group: 'wait' },
+      'Affecté': { bg: '#EDE9FE', fg: '#5B21B6', bar: '#7C3AED', group: 'wait' },
+      'En cours': { bg: '#FFEDD5', fg: '#9A3412', bar: '#EA580C', group: 'progress' },
+      'Résolu': { bg: '#DCFCE7', fg: '#166534', bar: '#16A34A', group: 'done' },
+      'Clôturé': { bg: '#D1FAE5', fg: '#065F46', bar: '#047857', group: 'done' },
+      'Rejeté': { bg: '#FEE2E2', fg: '#991B1B', bar: '#DC2626', group: 'rejected' }
+    };
+    var data = [
+      { ref: 'US-2026-000123', cat: 'Voirie', title: "Nid-de-poule profond devant l'école", place: 'Rue des Lilas', date: '24 oct.', supports: 18, status: 'En cours', progress: '75%' },
+      { ref: 'US-2026-000118', cat: 'Éclairage public', title: 'Lampadaire éteint depuis une semaine', place: 'Avenue de la Gare', date: '22 oct.', supports: 6, status: 'Validé', progress: '35%' },
+      { ref: 'US-2026-000121', cat: 'Eau et assainissement', title: 'Fuite d’eau au carrefour', place: 'Carrefour Pasteur', date: '25 oct.', supports: 0, status: 'Nouveau', progress: '12%' },
+      { ref: 'US-2026-000109', cat: 'Espaces verts', title: 'Arbre penché au-dessus du trottoir', place: 'Rue des Écoles', date: '18 oct.', supports: 4, status: 'Affecté', progress: '55%' },
+      { ref: 'US-2026-000097', cat: 'Propreté', title: 'Dépôt sauvage à l’entrée du parc', place: 'Parc Jean-Moulin', date: '12 oct.', supports: 9, status: 'Résolu', progress: '100%' },
+      { ref: 'US-2026-000071', cat: 'Mobilier urbain', title: 'Banc cassé place du Marché', place: 'Place du Marché', date: '2 oct.', supports: 3, status: 'Clôturé', progress: '100%' },
+      { ref: 'US-2026-000066', cat: 'Signalisation', title: 'Panneau stop tombé (doublon)', place: 'Rue Victor-Hugo', date: '29 sept.', supports: 0, status: 'Rejeté', progress: '100%' }
+    ];
+    var tabDefs = [['all', 'Tous'], ['wait', 'En attente'], ['progress', 'En cours'], ['done', 'Résolus'], ['rejected', 'Rejetés']];
+    var tab = this.state.tab;
+    var tabs = tabDefs.map((d) => ({
+      label: d[1],
+      count: d[0] === 'all' ? data.length : data.filter((x) => S[x.status].group === d[0]).length,
+      active: tab === d[0],
+      inactive: tab !== d[0],
+      pick: () => this.setState({ tab: d[0] })
+    }));
+    var items = data
+      .filter((x) => tab === 'all' || S[x.status].group === tab)
+      .map((x) => Object.assign({}, x, S[x.status], { canEdit: x.status === 'Nouveau', canRate: x.status === 'Résolu' }));
+    return { tabs: tabs, items: items, isEmpty: items.length === 0 };
+  }
+}
+</script>
+</body>
+</html>

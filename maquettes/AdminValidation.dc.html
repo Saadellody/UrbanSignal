@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>UrbanSignal Admin — File de validation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F1F5F9}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+input:focus,select:focus,textarea:focus{outline:3px solid #BFDBFE;border-color:#2563EB}
+</style>
+</helmet>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #0F172A; background: #F1F5F9; min-height: 100vh; display: flex; flex-wrap: wrap">
+
+  <aside style="flex: 1 1 248px; max-width: 100%; box-sizing: border-box; background: #0F172A; color: #E2E8F0; padding: 20px 14px; display: flex; flex-direction: column; gap: 24px">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 0 8px; text-decoration: none; color: #FFFFFF">
+      <span style="width: 34px; height: 34px; border-radius: 10px; background: #2563EB; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <span style="display: flex; flex-direction: column"><span style="font-weight: 800; font-size: 17px">UrbanSignal</span><span style="font-size: 12px; color: #94A3B8; font-weight: 600">Back-office mairie</span></span>
+    </a>
+    <nav aria-label="Back-office" style="display: flex; flex-direction: column; gap: 4px">
+      <a href="AdminValidation.dc.html" aria-current="page" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; background: #1E293B; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/></svg>À valider<span style="margin-left: auto; padding: 2px 8px; border-radius: 999px; background: #C2410C; color: #FFFFFF; font-size: 12px; font-weight: 800">8</span></a>
+      <a href="AdminSignalements.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Signalements</a>
+      <a href="Statistiques.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15v-4M12 15V7M17 15v-7"/></svg>Statistiques</a>
+      <a href="AdminUtilisateurs.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg>Utilisateurs</a>
+      <a href="AdminReferentiels.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 11px 12px; border-radius: 10px; color: #CBD5E1; font-size: 15px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Référentiels</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: 12px; background: #1E293B">
+      <span style="width: 36px; height: 36px; border-radius: 999px; background: #334155; color: #FFFFFF; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center">NA</span>
+      <span style="display: flex; flex-direction: column; min-width: 0"><span style="font-size: 14px; font-weight: 700; color: #FFFFFF">Nadia A.</span><span style="font-size: 12px; color: #94A3B8">Administratrice</span></span>
+    </div>
+  </aside>
+
+  <div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column">
+    <header style="background: #FFFFFF; border-bottom: 1px solid #E2E8F0; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 2px"><h1 style="margin: 0; font-size: 22px; letter-spacing: -0.02em">File de validation</h1><span style="font-size: 14px; color: #475569">8 signalements en attente · le plus ancien depuis 19 h</span></div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap">
+        <label for="av-cat" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Catégorie</label>
+        <select id="av-cat" style="height: 42px; border: 1px solid #CBD5E1; border-radius: 10px; padding: 0 10px; font: inherit; font-size: 14px; background: #FFFFFF"><option>Toutes catégories</option><option>Voirie</option><option>Éclairage public</option></select>
+        <label for="av-tri" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Tri</label>
+        <select id="av-tri" style="height: 42px; border: 1px solid #CBD5E1; border-radius: 10px; padding: 0 10px; font: inherit; font-size: 14px; background: #FFFFFF"><option>Plus anciens d'abord</option><option>Priorité suggérée</option></select>
+      </div>
+    </header>
+
+    <main style="padding: 20px 24px 40px; display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+      <ul aria-label="Signalements à valider" style="list-style: none; margin: 0; padding: 0; flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+        <sc-for list="{{queue}}" as="q" hint-placeholder-count="6">
+          <li>
+            <sc-if value="{{q.selected}}" hint-placeholder-val="{{ false }}">
+              <button type="button" aria-current="true" onClick="{{q.pick}}" style="width: 100%; text-align: left; font: inherit; cursor: pointer; display: flex; gap: 12px; padding: 14px; border-radius: 16px; border: 2px solid #2563EB; background: #FFFFFF; box-shadow: 0 10px 24px -16px rgba(37,99,235,0.6)">
+                <span style="width: 52px; height: 52px; flex: none; border-radius: 12px; background: #CBD5E1"></span>
+                <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><span style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 12px; font-weight: 700; color: #475569">{{q.cat}}</span><span style="font-size: 12px; color: #475569">{{q.age}}</span></span><span style="font-weight: 700; font-size: 15px; color: #0F172A">{{q.title}}</span><span style="font-size: 13px; color: #475569">{{q.place}}</span></span>
+              </button>
+            </sc-if>
+            <sc-if value="{{q.notSelected}}" hint-placeholder-val="{{ true }}">
+              <button type="button" onClick="{{q.pick}}" style="width: 100%; text-align: left; font: inherit; cursor: pointer; display: flex; gap: 12px; padding: 14px; border-radius: 16px; border: 1px solid #E2E8F0; background: #FFFFFF">
+                <span style="width: 52px; height: 52px; flex: none; border-radius: 12px; background: #E2E8F0"></span>
+                <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><span style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 12px; font-weight: 700; color: #475569">{{q.cat}}</span><span style="font-size: 12px; color: #475569">{{q.age}}</span></span><span style="font-weight: 600; font-size: 15px; color: #0F172A">{{q.title}}</span><span style="font-size: 13px; color: #475569">{{q.place}}</span></span>
+              </button>
+            </sc-if>
+          </li>
+        </sc-for>
+      </ul>
+
+      <section aria-label="Détail du signalement" style="flex: 999 1 520px; min-width: 0; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 20px">
+        <sc-if value="{{done}}" hint-placeholder-val="{{ false }}">
+          <div style="border-radius: 14px; padding: 14px 16px; background: {{doneBg}}; color: {{doneFg}}; font-weight: 700; font-size: 15px">{{doneText}}</div>
+        </sc-if>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 13px; font-weight: 700; color: #475569">{{sel.ref}} · {{sel.cat}} · soumis {{sel.age}}</span>
+            <h2 style="margin: 0; font-size: 24px; letter-spacing: -0.02em">{{sel.title}}</h2>
+            <span style="font-size: 14px; color: #475569">{{sel.place}} · par {{sel.author}}</span>
+          </div>
+          <span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #F1F5F9; color: #334155; font-size: 13px; font-weight: 700">Nouveau</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+          <div style="grid-column: span 2; height: 220px; border-radius: 14px; background: #CBD5E1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #334155">[Photo envoyée par le citoyen]</div>
+          <div style="height: 220px; border-radius: 14px; overflow: hidden; position: relative; background: #E9EEF5">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%" aria-hidden="true"><rect width="800" height="500" fill="#E9EEF5"/><path d="M0 330 L800 300" stroke="#FFFFFF" stroke-width="40" fill="none"/><path d="M260 0 L300 500" stroke="#FFFFFF" stroke-width="30" fill="none"/><path d="M560 0 L520 500" stroke="#FFFFFF" stroke-width="20" fill="none"/></svg>
+            <span aria-hidden="true" style="position: absolute; left: 50%; top: 55%; transform: translate(-50%, -100%)"><svg width="30" height="38" viewBox="0 0 28 36"><path d="M14 35s12-11 12-21A12 12 0 0 0 2 14c0 10 12 21 12 21z" fill="#64748B" stroke="#FFFFFF" stroke-width="2"/><circle cx="14" cy="14" r="4.5" fill="#FFFFFF"/></svg></span>
+          </div>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #334155">{{sel.desc}}</p>
+        <sc-if value="{{sel.hasDuplicate}}" hint-placeholder-val="{{ false }}">
+          <div style="border-radius: 14px; background: #FFF7ED; border: 1px solid #FED7AA; padding: 14px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 20h20z"/><path d="M12 9v5M12 17h.01"/></svg>
+            <span style="flex: 1 1 240px; font-size: 14px; color: #7C2D12"><strong>Doublon possible :</strong> US-2026-000123 « Nid-de-poule profond devant l'école », à 32 m, en cours.</span>
+            <button type="button" onClick="{{merge}}" style="height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid #FDBA74; background: #FFFFFF; color: #9A3412; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Fusionner</button>
+          </div>
+        </sc-if>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px">
+          <div style="display: flex; flex-direction: column; gap: 6px"><label for="av-prio" style="font-size: 14px; font-weight: 600">Priorité <span style="font-weight: 500; color: #475569">(suggérée : {{sel.prio}})</span></label><select id="av-prio" style="height: 46px; border: 1px solid #CBD5E1; border-radius: 10px; padding: 0 10px; font: inherit; font-size: 15px; background: #FFFFFF"><option>{{sel.prio}}</option><option>Basse</option><option>Normale</option><option>Haute</option><option>Urgente</option></select></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><label for="av-service" style="font-size: 14px; font-weight: 600">Service responsable</label><select id="av-service" style="height: 46px; border: 1px solid #CBD5E1; border-radius: 10px; padding: 0 10px; font: inherit; font-size: 15px; background: #FFFFFF"><option>{{sel.service}}</option><option>Service Voirie</option><option>Service Éclairage</option><option>Service Propreté</option><option>Service Eau</option><option>Service Espaces verts</option></select></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><label for="av-motif" style="font-size: 14px; font-weight: 600">Motif si rejet</label><select id="av-motif" style="height: 46px; border: 1px solid #CBD5E1; border-radius: 10px; padding: 0 10px; font: inherit; font-size: 15px; background: #FFFFFF"><option>Choisir un motif…</option><option>Doublon</option><option>Hors zone</option><option>Non pertinent</option><option>Abusif</option></select></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; border-top: 1px solid #E2E8F0; padding-top: 18px">
+          <button type="button" onClick="{{reject}}" style="height: 48px; padding: 0 18px; border-radius: 12px; border: 1px solid #FCA5A5; background: #FFFFFF; color: #B91C1C; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Rejeter</button>
+          <button type="button" onClick="{{validate}}" style="height: 48px; padding: 0 22px; border-radius: 12px; border: 0; background: #15803D; color: #FFFFFF; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Valider et transmettre</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1150}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { sel: 0, result: null };
+  }
+  renderVals() {
+    var data = [
+      { ref: 'US-2026-000124', cat: 'Voirie', age: 'il y a 19 h', title: 'Trou dans la chaussée face à l’école', place: '14 rue des Lilas, Centre', author: 'Mehdi R.', prio: 'Haute', service: 'Service Voirie', hasDuplicate: true, desc: 'Gros trou sur la chaussée devant le passage piéton de l’école, dangereux pour les vélos et les enfants.' },
+      { ref: 'US-2026-000125', cat: 'Éclairage public', age: 'il y a 15 h', title: 'Trois lampadaires éteints', place: 'Allée des Tilleuls, Nord', author: 'Claire D.', prio: 'Normale', service: 'Service Éclairage', hasDuplicate: false, desc: 'Toute l’allée est dans le noir le soir depuis vendredi. Trois lampadaires consécutifs ne s’allument plus.' },
+      { ref: 'US-2026-000126', cat: 'Sécurité / Autre', age: 'il y a 9 h', title: 'Câble électrique pendant', place: 'Rue Pasteur, Est', author: 'Anonyme', prio: 'Urgente', service: 'Service Voirie', hasDuplicate: false, desc: 'Un câble pend d’un poteau à hauteur de tête, près de l’arrêt de bus.' },
+      { ref: 'US-2026-000127', cat: 'Propreté', age: 'il y a 6 h', title: 'Conteneurs débordants', place: 'Place du Marché, Centre', author: 'Omar T.', prio: 'Normale', service: 'Service Propreté', hasDuplicate: false, desc: 'Les conteneurs n’ont pas été vidés après le marché, les sacs s’accumulent au sol.' },
+      { ref: 'US-2026-000128', cat: 'Eau et assainissement', age: 'il y a 3 h', title: 'Bouche d’égout bouchée', place: 'Rue Victor-Hugo, Sud', author: 'Lina M.', prio: 'Haute', service: 'Service Eau', hasDuplicate: false, desc: 'Après la pluie l’eau ne s’écoule plus, la rue est inondée sur 20 mètres.' },
+      { ref: 'US-2026-000129', cat: 'Espaces verts', age: 'il y a 1 h', title: 'Branche cassée sur le banc', place: 'Parc Jean-Moulin, Est', author: 'Hugo P.', prio: 'Normale', service: 'Service Espaces verts', hasDuplicate: false, desc: 'Une grosse branche est tombée sur un banc après le vent de cette nuit.' }
+    ];
+    var s = this.state.sel;
+    var queue = data.map((d, i) => Object.assign({}, d, {
+      selected: i === s,
+      notSelected: i !== s,
+      pick: () => this.setState({ sel: i, result: null })
+    }));
+    var r = this.state.result;
+    var texts = {
+      ok: ['Validé et transmis. Le citoyen et le responsable du service sont notifiés.', '#DCFCE7', '#166534'],
+      no: ['Rejeté. Le citoyen reçoit le motif par notification.', '#FEE2E2', '#991B1B'],
+      merge: ['Fusionné avec US-2026-000123. Le citoyen devient soutien du signalement d’origine.', '#FFEDD5', '#9A3412']
+    };
+    return {
+      queue: queue,
+      sel: data[s],
+      done: !!r,
+      doneText: r ? texts[r][0] : '',
+      doneBg: r ? texts[r][1] : '#FFFFFF',
+      doneFg: r ? texts[r][2] : '#0F172A',
+      validate: () => this.setState({ result: 'ok' }),
+      reject: () => this.setState({ result: 'no' }),
+      merge: () => this.setState({ result: 'merge' })
+    };
+  }
+}
+</script>
+</body>
+</html>
