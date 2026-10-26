@@ -137,20 +137,9 @@ story = [
         "<b>Pour le quartier</b> : un cadre de vie plus sûr et plus propre, plus de transparence et une "
         "participation citoyenne renforcée.",
     ]),
-    Paragraph("Architecture technique envisagée (développement distribué) :", h2),
-    table([
-        ["Couche", "Technologies"],
-        [cell("Présentation"), cell("JSF / JSP (ou client web consommant l'API REST), carte Leaflet / OpenStreetMap")],
-        [cell("Services / API"), cell("Servlets, API REST JAX-RS (échanges JSON)")],
-        [cell("Logique métier"), cell("EJB (Session Beans), CDI ; JMS pour les notifications asynchrones")],
-        [cell("Persistance"), cell("JPA / Hibernate, base MySQL ou PostgreSQL")],
-        [cell("Sécurité"), cell("Authentification et gestion des rôles (citoyen / agent / admin)")],
-        [cell("Serveur"), cell("Serveur d'application WildFly, Payara ou GlassFish")],
-    ], [4 * cm, 12 * cm]),
-    Spacer(1, 10),
     Paragraph(
-        "<b>En résumé :</b> UrbanSignal transforme un processus lent, opaque et dispersé en un service numérique "
-        "simple, transparent et traçable, au bénéfice des habitants comme des services municipaux.", body),
+        "<b>En résumé :</b> UrbanSignal transforme un processus lent et opaque en un service numérique "
+        "simple, transparent et traçable.", body),
 ]
 
 
