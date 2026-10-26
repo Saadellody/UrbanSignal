@@ -5,6 +5,7 @@ Projet du module **Développement distribué (J2EE / Jakarta EE)** — groupe de
 
 ## Documents
 
+- [Cahier des charges](docs/CAHIER_DES_CHARGES.md) — toutes les fonctionnalités, cas d'utilisation, règles métier, modèle de données, architecture, API, planning et répartition des tâches.
 - [Analyse du besoin (PDF)](docs/Analyse_du_besoin.pdf) — réponses aux trois questions :
   1. Quel est le problème / le besoin identifié ?
   2. Qui rencontre ce problème ?
